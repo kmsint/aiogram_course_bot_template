@@ -46,7 +46,7 @@ async def main() -> None:
     dp: Dispatcher = Dispatcher(storage=storage)
 
     # Настраиваем главное меню бота
-    await set_main_menu(dp)
+    await set_main_menu(bot=bot)
 
     # Регистрируем все хэндлеры
     register_all_handlers(dp)
